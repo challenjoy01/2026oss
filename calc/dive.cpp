@@ -1,4 +1,5 @@
 #include "dive.h"
+#include "sub.h"
 
 int dive(int x, int y)
 {
