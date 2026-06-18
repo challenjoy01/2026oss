@@ -8,6 +8,8 @@
 #include "mul.h"
 #include "sub.h"
 
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
@@ -15,10 +17,14 @@ int main()
 	int y = 0;
 	int i = 0;
 
-	for (; i < 10; i++)
-	{
+	for (; i < 10; i++) {
 		std::cout << "첫번째 수를 입력하세요 : ";
 		std::cin >> x;
+
+		if (-999 == x) {
+			printf("프로그램을 종료합니다.\n");
+			break;
+		}
 		std::cout << "두번째 수를 입력하세요 : ";
 		std::cin >> y;
 
